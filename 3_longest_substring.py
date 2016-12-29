@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
-        dic = dict() 
+        dic = dict()
         for i, ch in enumerate(s):
             if ch in dic:
                 dic[ch].append(i)
@@ -29,6 +30,7 @@ class Solution(object):
                 max_index = i
         substr = s[max_index:max_index + max_dist]
         print(substr)
+
 
 print("Enter the string you want to test")
 str = input()
